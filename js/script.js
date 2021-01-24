@@ -24,7 +24,7 @@ var squareWithBorder = (n, charBorder, charInner) => {
 }
 
 console.log('-- 2º SQUARE WITH BORDER --');
-squareWithBorder(5, '0', '*')
+squareWithBorder(5, '0', '*');
 
 
 // 3º SQUARE DIAGONAL LEFT-RIGHT
@@ -48,7 +48,7 @@ var squareDiagonalRL = (n, charDiagonal, charUp, charDown) => {
 }
 
 console.log('-- 4º SQUARE DIAGONAL RIGHT-LEFT --');
-squareDiagonalRL(5, '/', 'A', 'B')
+squareDiagonalRL(5, '/', 'A', 'B');
 
 
 // 5º HALF DIAMOND
