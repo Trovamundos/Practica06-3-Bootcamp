@@ -7,7 +7,7 @@ var square = (n, char) => {
     }
 }
 
-console.log('-- 1º SQUARE --')
+console.log('-- 1º SQUARE --');
 square(5, '*');
 
 
@@ -18,12 +18,12 @@ var squareWithBorder = (n, charBorder, charInner) => {
         if (i === 0 || i === n - 1) {
             console.log(i, charBorder.repeat(n));
         } else {
-            console.log(i, charBorder + charInner.repeat(n-2) + charBorder)
+            console.log(i, charBorder + charInner.repeat(n-2) + charBorder);
         }    
     }
 }
 
-console.log('-- 2º SQUARE WITH BORDER --')
+console.log('-- 2º SQUARE WITH BORDER --');
 squareWithBorder(5, '0', '*')
 
 
@@ -35,7 +35,7 @@ var squareDiagonalLR = (n, charDiagonal, charUp, charDown) => {
     }
 }
 
-console.log('-- 3º SQUARE DIAGONAL LEFT-RIGHT --')
+console.log('-- 3º SQUARE DIAGONAL LEFT-RIGHT --');
 squareDiagonalLR(5, '\\', 'A', 'B');
 
 
@@ -47,7 +47,7 @@ var squareDiagonalRL = (n, charDiagonal, charUp, charDown) => {
     }
 }
 
-console.log('-- 4º SQUARE DIAGONAL RIGHT-LEFT --')
+console.log('-- 4º SQUARE DIAGONAL RIGHT-LEFT --');
 squareDiagonalRL(5, '/', 'A', 'B')
 
 
@@ -60,13 +60,13 @@ var halfDiamond = (n, char) => {
         counter++;
     }
     for (let i = n - 2; i >= 0; i--) {
-        console.log(counter,char.repeat(i + 1))
+        console.log(counter,char.repeat(i + 1));
         counter++;
 
     }
 }
 
-console.log('-- 5º HALF DIAMOND --')
+console.log('-- 5º HALF DIAMOND --');
 halfDiamond(5, '*');
 
 
@@ -93,10 +93,10 @@ var diamond = (n, char) => {
         counter++;
     }
     for (let i = n - 2; i >= 0; i--) {
-        console.log(counter,aux.repeat(n - i - 1) + char.repeat(1 + i * 2))
+        console.log(counter,aux.repeat(n - i - 1) + char.repeat(1 + i * 2));
         counter++;
     }
 }
 
-console.log('-- 7º DIAMOND --')
+console.log('-- 7º DIAMOND --');
 diamond(5, '*');
